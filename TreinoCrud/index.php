@@ -70,8 +70,8 @@ $bigodin = $conexao->executeSelect("select * from usuario");
         <td>'.$usuario->endereco.'</td>
         <td>'.$usuario->telefone.'</td>
         <td>
-      <formmethod="POST">
-      <button class="btn btn-warning btn-Xs">
+      <form method="POST" action = "index3.php">
+      <button class="btn btn-warning btn-Xs" name = "atualizar" value = "'.$usuario->id.'">
       <i class= "bi bi-pencil-square"></i>
       </button>
       </form>

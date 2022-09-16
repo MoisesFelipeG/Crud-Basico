@@ -24,8 +24,7 @@ class conexao{
                 return '1';
             }
             else{
-                //return $sql-> errorInfo();
-                return "a";
+                return $sql-> errorInfo();
             }
         } catch (PDOException $msg){
             echo "Não foi possivel executar o comando: ".$msg->getMessage();

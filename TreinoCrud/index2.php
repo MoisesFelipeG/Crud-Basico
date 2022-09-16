@@ -77,7 +77,7 @@ $conexao = new conexao();
 $bigodin = $conexao->executeSelect("select * from usuario");
 
 if(isset($_POST["botao"])){
-    $conexao->executeQuery("insert into usuario values(null,'".$_POST["nome"]."','".$_POST["email"]."','2020-10-08' ,
+    $conexao->executeQuery("insert into usuario values(null,'".$_POST["nome"]."','".$_POST["email"]."','2020-10-08',
      '".$_POST["endereco"]."','".$_POST["telefone"]."');");
 }
 
